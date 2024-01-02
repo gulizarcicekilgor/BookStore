@@ -1,8 +1,3 @@
-using System;
-using System.Collections.Generic;
-using Microsoft.AspNetCore.Http.HttpResults;
-using Microsoft.AspNetCore.Mvc;
-using WebApi.Common;
 using WebApi.DBOperations;
 
 namespace WebApi.BookOperations.UpdateBook
@@ -11,6 +6,7 @@ namespace WebApi.BookOperations.UpdateBook
     {    //consractor içinden set edilmek için
         private readonly BookStoreDbContext _dbContext;
 
+        //valide ederken hem modeli hem de book id valide eliyor.
         public int BookId {get; set;} // bookid ile update yapılıyor
         public UpdateBookModel Model {get; set;}
 
