@@ -19,3 +19,11 @@
  ![Alt text](image-2.png)
  Put (update)
  ![Alt text](image-3.png)
+
+
+ ----Request Loglama
+
+ ![Alt text](image-4.png)
+
+ dotnet add package Newtonsoft.Json
+![Alt text](image-5.png)
