@@ -21,8 +21,7 @@
  Put (update)
  ![Alt text](image-3.png)
 
-
- ----Request Loglama
+ ----Request Loglama---------------
 
  ![Alt text](image-4.png)
 
