@@ -11,6 +11,7 @@
 
  ---Fluent Validation---------------
  dotnet add package FluentValidation --version 7.0.0
+ 
  Post
  ![Alt text](image.png)
  Delete
