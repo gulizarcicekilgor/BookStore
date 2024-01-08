@@ -1,13 +1,9 @@
-using System;
-using System.Collections.Generic;
-using System.Reflection.Metadata;
+
 using AutoMapper;
-using Microsoft.AspNetCore.Http.HttpResults;
-using Microsoft.AspNetCore.Mvc;
-using WebApi.Common;
+using Microsoft.EntityFrameworkCore;
 using WebApi.DBOperations;
 
-namespace WebApi.BookOperations.GetBookDetail
+namespace WebApi.Application.BookOperations.GetBookDetail
 {
     public class GetBookDetailQuery
     {
@@ -23,8 +19,8 @@ namespace WebApi.BookOperations.GetBookDetail
         }
 
         public BookDetailViewModel Handle()
-        {
-            var book = _dbContext.Books.Where(book => book.Id == BookId).FirstOrDefault(); //singleordefult hata veriyor
+        {                               //include ile genre tablosunu ekledik
+            var book = _dbContext.Books.Include(x=>x.Genre).Where(book => book.Id == BookId).FirstOrDefault(); //singleordefult hata veriyor
             if(book is null)
                 throw new InvalidCastException("Kitap bulunamadı");
             //book 'u view modele maplame işlemi

@@ -2,10 +2,10 @@ using FluentValidation;
 
 namespace WebApi.Application.GenreOpreations.CreateGenre
 {
-    public class CreaateGenreCommadValidator : AbstractValidator<CreateGenreCommad>
+    public class CreateGenreCommandValidator : AbstractValidator<CreateGenreCommand>
     {
         // constructor aracılığıyla validasyon yapıyor. O yüzden bir constructor yaratıyoruz
-        public CreaateGenreCommadValidator()
+        public CreateGenreCommandValidator()
         {
             RuleFor(x => x.Model.Name).NotEmpty().MinimumLength(4);
         }

@@ -1,12 +1,6 @@
-using System;
-using System.Collections.Generic;
-using System.Reflection.Metadata;
-using Microsoft.AspNetCore.Http.HttpResults;
-using Microsoft.AspNetCore.Mvc;
-using WebApi.Common;
 using WebApi.DBOperations;
 
-namespace WebApi.BookOperations.DeleteBook
+namespace WebApi.Application.BookOperations.DeleteBook
 {
     public class DeleteBookCommand
     {

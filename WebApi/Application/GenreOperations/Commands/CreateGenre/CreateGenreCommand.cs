@@ -3,14 +3,14 @@ using WebApi.Entities;
 
 namespace WebApi.Application.GenreOpreations.CreateGenre
 {
-    public class CreateGenreCommad
+    public class CreateGenreCommand
     {
-        public CreaateGenreModel Model { get; set; }
+        public CreateGenreModel Model { get; set; }
         //Contex, mapper belki, dışardan genre yaratmak için modele ihiyac var
         private readonly BookStoreDbContext _context;
 
         //Contex'i injectionla alabilmek için constroctur oluşturduk
-        public CreateGenreCommad(BookStoreDbContext context)
+        public CreateGenreCommand(BookStoreDbContext context)
         {
             _context = context;
         }
@@ -28,7 +28,7 @@ namespace WebApi.Application.GenreOpreations.CreateGenre
         }
     }
 
-    public class CreaateGenreModel
+    public class CreateGenreModel
     {
         public string Name { get; set; }
     }

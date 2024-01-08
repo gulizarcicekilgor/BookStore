@@ -26,7 +26,8 @@ namespace WebApi.Application.GenreOpreations.UpdateGenre
             if(_context.Genres.Any(x => x.Name.ToLower() ==Model.Name.ToLower() && x.Id != GenreId))  //aynı isimli farklı idli kontrolü
                 throw new InvalidOperationException("Aynı isimli kategori zaten mevcut");
             //isActive update edilirken: kendi name'i ile kendini update edecek, yani name i nulllamadan yapacak
-            genre.Name = Model.Name.Trim() == default ? Model.Name : genre.Name;
+            //isnullorEmty ile name i nulllamadan yapacak
+            genre.Name = string.IsNullOrEmpty( Model.Name.Trim()) ? genre.Name : Model.Name;
             genre.IsActive = Model.IsActive;
             _context.SaveChanges();
 

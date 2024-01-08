@@ -3,14 +3,14 @@ using WebApi.Entities;
 
 namespace WebApi.Application.GenreOpreations.DeleteGenre
 {
-    public class DeleteGenreCommad
+    public class DeleteGenreCommand
     {
         private readonly BookStoreDbContext _context;
         public int GenreId { get; set; }
 
 
         //Contex'i injectionla alabilmek için constroctur oluşturduk
-        public DeleteGenreCommad(BookStoreDbContext context)
+        public DeleteGenreCommand(BookStoreDbContext context)
         {
             _context = context;
         }

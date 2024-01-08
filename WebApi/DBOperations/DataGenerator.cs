@@ -1,7 +1,4 @@
-using System;
-using System.Linq;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
 using WebApi.Entities;
 
 namespace WebApi.DBOperations
