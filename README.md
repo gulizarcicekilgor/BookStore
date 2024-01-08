@@ -27,3 +27,13 @@
 
  dotnet add package Newtonsoft.Json
 ![Alt text](image-5.png)
+
+
+----Projeye DI Container Kullanarak Logger Servis Eklemek
+builder.Services.AddSingleton<ILoggerService, ConsoleLogger>();
+
+![Alt text](image-6.png)
+
+builder.Services.AddSingleton<ILoggerService, DBLooger>();
+
+![Alt text](image-7.png)
