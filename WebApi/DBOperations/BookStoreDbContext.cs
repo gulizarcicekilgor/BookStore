@@ -10,6 +10,7 @@ namespace WebApi.DBOperations
         // resourceler hep çoğul olacak Books, Genres..
         public DbSet<Book> Books {get; set;}
         public DbSet<Genre>Genres{get; set;}
+        public DbSet<Author>Authors{get; set;}
 
     }
 }

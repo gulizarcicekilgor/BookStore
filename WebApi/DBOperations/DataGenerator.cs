@@ -21,12 +21,18 @@ namespace WebApi.DBOperations
                     new Genre {Name = "Crime"}
 
                 );
+                context.Authors.AddRange(
+                    new Author {Name = "John", Surname = "steinbeck"},
+                    new Author {Name = "Yunus", Surname = "Emre"},
+                    new Author {Name = "Ahmet", Surname = "Ümit"});
+                    
 
                 context.Books.AddRange(
                      new Book
                      {
                          Title = "Lean Startup",
                          GenreId = 1,
+                         AuthorId =1,
                          PageCount = 232,
                          PublishDate = new DateTime(2022, 04, 10)
                      },
@@ -34,6 +40,7 @@ namespace WebApi.DBOperations
                     {
                         Title = "Herland",
                         GenreId = 2,
+                        AuthorId =3,
                         PageCount = 545,
                         PublishDate = new DateTime(2022, 03, 10)
                     },
@@ -41,6 +48,7 @@ namespace WebApi.DBOperations
                     {
                         Title = "Dune",
                         GenreId = 2,
+                        AuthorId =1,
                         PageCount = 121,
                         PublishDate = new DateTime(2025, 03, 14)
                     }

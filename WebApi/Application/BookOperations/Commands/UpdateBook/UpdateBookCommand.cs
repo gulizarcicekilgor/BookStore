@@ -23,6 +23,7 @@ namespace WebApi.Application.BookOperations.UpdateBook
                 throw new InvalidCastException ("Güncellenecek kitap bulunamadı");
 
             book.GenreId = Model.GenreId != default ? Model.GenreId : book.GenreId;
+            book.AuthorId = Model.AuthorId != default ? Model.AuthorId : book.AuthorId;
             book.Title = Model.Title != default ? Model.Title : book.Title;
 
             _dbContext.SaveChanges();  //artık db ile çalışıyoruz
@@ -33,6 +34,7 @@ namespace WebApi.Application.BookOperations.UpdateBook
         {
             public string? Title { get; set; }
             public int GenreId { get; set; }
+            public int AuthorId { get; set; }
         }
     }
 }

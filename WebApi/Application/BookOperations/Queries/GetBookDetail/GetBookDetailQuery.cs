@@ -20,7 +20,10 @@ namespace WebApi.Application.BookOperations.GetBookDetail
 
         public BookDetailViewModel Handle()
         {                               //include ile genre tablosunu ekledik
-            var book = _dbContext.Books.Include(x=>x.Genre).Where(book => book.Id == BookId).FirstOrDefault(); //singleordefult hata veriyor
+            var book = _dbContext.Books.Include(x=>x.Genre)
+                                        .Include(x=>x.Author)
+                                        .Where(book => book.Id == BookId)
+                                        .FirstOrDefault(); //singleordefult hata veriyor
             if(book is null)
                 throw new InvalidCastException("Kitap bulunamadı");
             //book 'u view modele maplame işlemi
@@ -40,6 +43,7 @@ namespace WebApi.Application.BookOperations.GetBookDetail
     {
         public string Title {get; set;}
         public string Genre {get; set;}
+        public string Author {get; set;}
         public int PageCount {get; set;}
         public string PublishDate {get; set;}
 

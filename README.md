@@ -37,3 +37,26 @@ builder.Services.AddSingleton<ILoggerService, ConsoleLogger>();
 builder.Services.AddSingleton<ILoggerService, DBLooger>();
 
 ![Alt text](image-7.png)
+
+
+
+ÖDEV - Projeye Author Controller ve Servislerin Eklenmesi
+Yazar Ekleme
+![Alt text](image-10.png)
+![Alt text](image-11.png)
+
+Yazar Bilgileri Güncelleme
+
+![Alt text](image-12.png)
+
+![Alt text](image-13.png)
+Yazar Silme
+
+Tüm Yazarları Listeleme
+
+![Alt text](image-8.png)
+
+Spesifik Bir Yazarın Bilgilerini Getirme
+
+![Alt text](image-9.png)
+
