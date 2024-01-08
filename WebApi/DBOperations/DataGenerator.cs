@@ -2,6 +2,7 @@ using System;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
+using WebApi.Entities;
 
 namespace WebApi.DBOperations
 {
@@ -15,6 +16,15 @@ namespace WebApi.DBOperations
                 {
                     return;
                 }
+                context.Genres.AddRange(
+                    new Genre {Name = "Action"},
+                    new Genre {Name = "Adventure"},
+                    new Genre {Name = "Biography"},
+                    new Genre {Name = "Comedy"},
+                    new Genre {Name = "Crime"}
+
+                );
+
                 context.Books.AddRange(
                      new Book
                      {
