@@ -17,12 +17,13 @@ namespace WebApi.Application.AuthorOpreations.CreateAuthor
 
         public void Handle()
         {
-            var author = _context.Authors.SingleOrDefault(x => x.Name == Model.Name && x.Surname == Model.Surname);
+            var author = _context.Authors.SingleOrDefault(x => x.Name == Model.Name && x.Surname == Model.Surname && x.BirthDate ==Model.BirthDate);
             if (author is not null)
                 throw new InvalidOperationException("Yazar zaten mevcut");
             author = new Author();
             author.Name = Model.Name;
             author.Surname = Model.Surname;
+            author.BirthDate = Model.BirthDate;
             //Author entitisine bu nesneyi ver
             _context.Authors.Add(author);
             _context.SaveChanges();
@@ -33,6 +34,7 @@ namespace WebApi.Application.AuthorOpreations.CreateAuthor
     {
         public string Name { get; set; }
         public string Surname { get; set; }
+        public DateTime BirthDate { get; set; }
     }
 
 }

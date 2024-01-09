@@ -42,21 +42,29 @@ builder.Services.AddSingleton<ILoggerService, DBLooger>();
 
 ÖDEV - Projeye Author Controller ve Servislerin Eklenmesi
 Yazar Ekleme
-![Alt text](image-10.png)
-![Alt text](image-11.png)
+![Alt text](image-14.png)
+![Alt text](image-15.png)
 
 Yazar Bilgileri Güncelleme
 
-![Alt text](image-12.png)
+![Alt text](image-16.png)
+![Alt text](image-17.png)
 
-![Alt text](image-13.png)
 Yazar Silme
+"Kitabı yayında olan bir yazar silinememeli. Öncelikle kitap silinmeli, daha sonra yazar silinebilir."
+1 idli yazar kitapla eşleştiği için silinemiyor.
+
+![Alt text](image-22.png)
+
+![Alt text](image-21.png)
+
+
 
 Tüm Yazarları Listeleme
 
-![Alt text](image-8.png)
+![Alt text](image-19.png)
 
 Spesifik Bir Yazarın Bilgilerini Getirme
 
-![Alt text](image-9.png)
+![Alt text](image-20.png)
 

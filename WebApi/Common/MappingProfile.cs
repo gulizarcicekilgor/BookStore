@@ -20,11 +20,11 @@ namespace WebApi.Common
 
             CreateMap<Book, BookDetailViewModel>()
                 .ForMember(dest => dest.Genre, opt => opt.MapFrom(src => src.Genre.Name))
-                .ForMember(dest => dest.Author, opt => opt.MapFrom(src => $"{src.Author.Name}{src.Author.Surname}"));
+                .ForMember(dest => dest.Author, opt => opt.MapFrom(src => $"{src.Author.Name}{src.Author.Surname}{src.Author.BirthDate}"));
 
             //createbookmodel objesi book objesine mapplensin
             CreateMap<Book,BooksViewModel>().ForMember(dest => dest.Genre, opt => opt.MapFrom(src => src.Genre.Name))
-                                            .ForMember(dest => dest.Author, opt => opt.MapFrom(src => $"{src.Author.Name}{src.Author.Surname}"));
+                                            .ForMember(dest => dest.Author, opt => opt.MapFrom(src => $"{src.Author.Name}{src.Author.Surname}{src.Author.BirthDate}"));
     
             CreateMap<Genre,GenresViewModel>();
             CreateMap<Genre, GenreDetailViewModel>();

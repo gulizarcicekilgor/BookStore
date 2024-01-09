@@ -18,6 +18,9 @@ namespace WebApi.Application.AuthorOpreations.DeleteAuthor
         public void Handle()
         {
             var author = _context.Authors.SingleOrDefault(x => x.Id == AuthorId);
+            var author_book=_context.Books.SingleOrDefault(x=>x.AuthorId == AuthorId);
+            if (author_book is not null)
+                throw new InvalidOperationException("yazar kitabı yayında. Önce kitabı silmelisiniz");
             if (author is null)
                 throw new InvalidOperationException("Yazar bulunamadı");
 
