@@ -13,7 +13,7 @@
  dotnet add package FluentValidation --version 7.0.0
  
  Post
- ![Alt text](image\image\image.png)
+ ![Alt text](image.png)
  Delete
  ![Alt text](image\image-1.png)
  
@@ -67,5 +67,5 @@ Tüm Yazarları Listeleme
 
 Spesifik Bir Yazarın Bilgilerini Getirme
 
-![Alt text](image\image-20.png)
+![Alt text](WebApi\image\image-20.png)
 
