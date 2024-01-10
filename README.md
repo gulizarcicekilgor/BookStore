@@ -67,5 +67,5 @@ Tüm Yazarları Listeleme
 
 Spesifik Bir Yazarın Bilgilerini Getirme
 
-![Alt text](image\image-20.png)
+![Alt text](WebApi\image\image-20.png)
 
