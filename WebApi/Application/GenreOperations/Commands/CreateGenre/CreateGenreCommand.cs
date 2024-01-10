@@ -7,10 +7,10 @@ namespace WebApi.Application.GenreOpreations.CreateGenre
     {
         public CreateGenreModel Model { get; set; }
         //Contex, mapper belki, dışardan genre yaratmak için modele ihiyac var
-        private readonly BookStoreDbContext _context;
+        private readonly IBookStoreDbContext _context;
 
         //Contex'i injectionla alabilmek için constroctur oluşturduk
-        public CreateGenreCommand(BookStoreDbContext context)
+        public CreateGenreCommand(IBookStoreDbContext context)
         {
             _context = context;
         }

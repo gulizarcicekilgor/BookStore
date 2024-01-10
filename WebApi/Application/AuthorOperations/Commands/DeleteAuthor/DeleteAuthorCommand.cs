@@ -5,12 +5,12 @@ namespace WebApi.Application.AuthorOpreations.DeleteAuthor
 {
     public class DeleteAuthorCommand
     {
-        private readonly BookStoreDbContext _context;
+        private readonly IBookStoreDbContext _context;
         public int AuthorId { get; set; }
 
 
         //Contex'i injectionla alabilmek için constroctur oluşturduk
-        public DeleteAuthorCommand(BookStoreDbContext context)
+        public DeleteAuthorCommand(IBookStoreDbContext context)
         {
             _context = context;
         }

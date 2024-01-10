@@ -14,11 +14,11 @@ namespace WebApi.Controllers
     [Route("[controller]")]
     public class GenreController : ControllerBase
     {   // diğer containerden gelen 2 tane DI var.
-        private readonly BookStoreDbContext _context;
+        private readonly IBookStoreDbContext _context;
         private readonly IMapper _mapper;
 
         //bunları injection ile alabilek için constructor
-        public GenreController(BookStoreDbContext context, IMapper mapper)
+        public GenreController(IBookStoreDbContext context, IMapper mapper)
         {
             _context = context;
             _mapper = mapper;

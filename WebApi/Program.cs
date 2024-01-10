@@ -8,8 +8,11 @@ using WebApi.Services;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddDbContext<BookStoreDbContext>(options =>
-options.UseInMemoryDatabase("BookStoreDB"));
+builder.Services.AddDbContext<BookStoreDbContext>(options => options.UseInMemoryDatabase("BookStoreDB"));
+
+//scope: inject edilen service'in sadece request lifetime içerisinde yaşar.
+builder.Services.AddScoped<IBookStoreDbContext>(provider => provider.GetService<BookStoreDbContext>());
+
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

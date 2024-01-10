@@ -7,10 +7,10 @@ namespace WebApi.Application.AuthorOpreations.CreateAuthor
     {
         public CreateAuthorModel Model { get; set; }
         //Contex, mapper belki, dışardan author yaratmak için modele ihiyac var
-        private readonly BookStoreDbContext _context;
+        private readonly IBookStoreDbContext _context;
 
         //Contex'i injectionla alabilmek için constroctur oluşturduk
-        public CreateAuthorCommand(BookStoreDbContext context)
+        public CreateAuthorCommand(IBookStoreDbContext context)
         {
             _context = context;
         }

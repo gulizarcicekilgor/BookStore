@@ -5,12 +5,12 @@ namespace WebApi.Application.GenreOpreations.DeleteGenre
 {
     public class DeleteGenreCommand
     {
-        private readonly BookStoreDbContext _context;
+        private readonly IBookStoreDbContext _context;
         public int GenreId { get; set; }
 
 
         //Contex'i injectionla alabilmek için constroctur oluşturduk
-        public DeleteGenreCommand(BookStoreDbContext context)
+        public DeleteGenreCommand(IBookStoreDbContext context)
         {
             _context = context;
         }

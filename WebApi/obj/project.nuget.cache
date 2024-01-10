@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QR46doKnojmHoLhvDXeGEibaCfdbE4Ii0Kyawjqz/5S6opn8ErEhHVw8YASQMSvztohJryl2XVTewE3dAI8eqw==",
+  "dgSpecHash": "HlVMHV275LBFSnqTbSKtpCHQVjgNoQd7TMChKQro/H8yKk4n4VboXbJh1Kpqrlxup5XSSE3/p5WhbikVssgLvA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\guliz\\Desktop\\CHomework\\BookStore\\WebApi\\WebApi.csproj",
+  "projectFilePath": "c:\\Users\\guliz\\Desktop\\CHomework\\BookStore\\WebApi\\WebApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\guliz\\.nuget\\packages\\automapper\\10.0.0\\automapper.10.0.0.nupkg.sha512",
     "C:\\Users\\guliz\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\7.0.0\\automapper.extensions.microsoft.dependencyinjection.7.0.0.nupkg.sha512",
@@ -107,7 +107,7 @@
       "code": "NU1603",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "WebApi, AutoMapper (>= 9.0.1) öğesine bağımlı ancak AutoMapper 9.0.1 bulunamadı. Yaklaşık bir en iyi eşleşme olan AutoMapper 10.0.0 çözümlendi.",
+      "message": "WebApi depends on AutoMapper (>= 9.0.1) but AutoMapper 9.0.1 was not found. An approximate best match of AutoMapper 10.0.0 was resolved.",
       "libraryId": "AutoMapper",
       "targetGraphs": [
         "net7.0"

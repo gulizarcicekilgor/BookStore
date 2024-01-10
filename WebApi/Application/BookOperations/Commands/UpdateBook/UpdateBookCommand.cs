@@ -4,13 +4,13 @@ namespace WebApi.Application.BookOperations.UpdateBook
 {
     public class UpdateBookCommand
     {    //consractor içinden set edilmek için
-        private readonly BookStoreDbContext _dbContext;
+        private readonly IBookStoreDbContext _dbContext;
 
         //valide ederken hem modeli hem de book id valide eliyor.
         public int BookId {get; set;} // bookid ile update yapılıyor
         public UpdateBookModel Model {get; set;}
 
-        public UpdateBookCommand(BookStoreDbContext dbContext)
+        public UpdateBookCommand(IBookStoreDbContext dbContext)
         {
             _dbContext = dbContext;
         }
