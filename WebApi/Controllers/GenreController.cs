@@ -35,7 +35,7 @@ namespace WebApi.Controllers
         [HttpGet("id")]
         public IActionResult GetGenreDetail(int id)
         {
-            GetGenreDetailQuery query = new GetGenreDetailQuery(_mapper, _context);
+            GetGenreDetailQuery query = new GetGenreDetailQuery(_context, _mapper);
             query.GenreId = id;
             GetGenreDetailQueryValidator vl = new GetGenreDetailQueryValidator();
             vl.ValidateAndThrow(query);

@@ -9,10 +9,11 @@ namespace WebApi.Application.GenreOpreations.Queries.GenreDetail
         public readonly IBookStoreDbContext _context;
         public readonly IMapper _mapper;
 
-        public GetGenreDetailQuery(IMapper mapper, IBookStoreDbContext context)
+        public GetGenreDetailQuery(IBookStoreDbContext context, IMapper mapper)
         {
-            _context = context;
             _mapper = mapper;
+            _context = context;
+            
         }
 
         public GenreDetailViewModel Handle()
