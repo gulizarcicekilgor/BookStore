@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\guliz\\Desktop\\CHomework\\BookStore\\Tests\\WebApi.UnitTests\\WebApi.UnitTests.csproj": {}
+    "C:\\Users\\guliz\\Desktop\\CHomework\\BookStore\\Tests\\WebApi.UnitTests\\WebApi.UnitTests.csproj": {}
   },
   "projects": {
-    "c:\\Users\\guliz\\Desktop\\CHomework\\BookStore\\Tests\\WebApi.UnitTests\\WebApi.UnitTests.csproj": {
+    "C:\\Users\\guliz\\Desktop\\CHomework\\BookStore\\Tests\\WebApi.UnitTests\\WebApi.UnitTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\guliz\\Desktop\\CHomework\\BookStore\\Tests\\WebApi.UnitTests\\WebApi.UnitTests.csproj",
+        "projectUniqueName": "C:\\Users\\guliz\\Desktop\\CHomework\\BookStore\\Tests\\WebApi.UnitTests\\WebApi.UnitTests.csproj",
         "projectName": "WebApi.UnitTests",
-        "projectPath": "c:\\Users\\guliz\\Desktop\\CHomework\\BookStore\\Tests\\WebApi.UnitTests\\WebApi.UnitTests.csproj",
+        "projectPath": "C:\\Users\\guliz\\Desktop\\CHomework\\BookStore\\Tests\\WebApi.UnitTests\\WebApi.UnitTests.csproj",
         "packagesPath": "C:\\Users\\guliz\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\guliz\\Desktop\\CHomework\\BookStore\\Tests\\WebApi.UnitTests\\obj\\",
+        "outputPath": "C:\\Users\\guliz\\Desktop\\CHomework\\BookStore\\Tests\\WebApi.UnitTests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\guliz\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "c:\\Users\\guliz\\Desktop\\CHomework\\BookStore\\WebApi\\WebApi.csproj": {
-                "projectPath": "c:\\Users\\guliz\\Desktop\\CHomework\\BookStore\\WebApi\\WebApi.csproj"
+              "C:\\Users\\guliz\\Desktop\\CHomework\\BookStore\\WebApi\\WebApi.csproj": {
+                "projectPath": "C:\\Users\\guliz\\Desktop\\CHomework\\BookStore\\WebApi\\WebApi.csproj"
               }
             }
           }
@@ -47,6 +47,14 @@
             "FluentAssertions": {
               "target": "Package",
               "version": "[6.12.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[7.0.0, )"
             },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
@@ -93,14 +101,14 @@
         }
       }
     },
-    "c:\\Users\\guliz\\Desktop\\CHomework\\BookStore\\WebApi\\WebApi.csproj": {
+    "C:\\Users\\guliz\\Desktop\\CHomework\\BookStore\\WebApi\\WebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\guliz\\Desktop\\CHomework\\BookStore\\WebApi\\WebApi.csproj",
+        "projectUniqueName": "C:\\Users\\guliz\\Desktop\\CHomework\\BookStore\\WebApi\\WebApi.csproj",
         "projectName": "WebApi",
-        "projectPath": "c:\\Users\\guliz\\Desktop\\CHomework\\BookStore\\WebApi\\WebApi.csproj",
+        "projectPath": "C:\\Users\\guliz\\Desktop\\CHomework\\BookStore\\WebApi\\WebApi.csproj",
         "packagesPath": "C:\\Users\\guliz\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\guliz\\Desktop\\CHomework\\BookStore\\WebApi\\obj\\",
+        "outputPath": "C:\\Users\\guliz\\Desktop\\CHomework\\BookStore\\WebApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\guliz\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -6980,6 +6980,8 @@
   "projectFileDependencyGroups": {
     "net7.0": [
       "FluentAssertions >= 6.12.0",
+      "Microsoft.EntityFrameworkCore >= 7.0.0",
+      "Microsoft.EntityFrameworkCore.InMemory >= 7.0.0",
       "Microsoft.NET.Test.Sdk >= 17.7.1",
       "Moq >= 4.20.70",
       "WebApi >= 1.0.0",
@@ -6994,11 +6996,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\guliz\\Desktop\\CHomework\\BookStore\\Tests\\WebApi.UnitTests\\WebApi.UnitTests.csproj",
+      "projectUniqueName": "C:\\Users\\guliz\\Desktop\\CHomework\\BookStore\\Tests\\WebApi.UnitTests\\WebApi.UnitTests.csproj",
       "projectName": "WebApi.UnitTests",
-      "projectPath": "c:\\Users\\guliz\\Desktop\\CHomework\\BookStore\\Tests\\WebApi.UnitTests\\WebApi.UnitTests.csproj",
+      "projectPath": "C:\\Users\\guliz\\Desktop\\CHomework\\BookStore\\Tests\\WebApi.UnitTests\\WebApi.UnitTests.csproj",
       "packagesPath": "C:\\Users\\guliz\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\guliz\\Desktop\\CHomework\\BookStore\\Tests\\WebApi.UnitTests\\obj\\",
+      "outputPath": "C:\\Users\\guliz\\Desktop\\CHomework\\BookStore\\Tests\\WebApi.UnitTests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\guliz\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -7015,8 +7017,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "c:\\Users\\guliz\\Desktop\\CHomework\\BookStore\\WebApi\\WebApi.csproj": {
-              "projectPath": "c:\\Users\\guliz\\Desktop\\CHomework\\BookStore\\WebApi\\WebApi.csproj"
+            "C:\\Users\\guliz\\Desktop\\CHomework\\BookStore\\WebApi\\WebApi.csproj": {
+              "projectPath": "C:\\Users\\guliz\\Desktop\\CHomework\\BookStore\\WebApi\\WebApi.csproj"
             }
           }
         }
@@ -7034,6 +7036,14 @@
           "FluentAssertions": {
             "target": "Package",
             "version": "[6.12.0, )"
+          },
+          "Microsoft.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "[7.0.0, )"
+          },
+          "Microsoft.EntityFrameworkCore.InMemory": {
+            "target": "Package",
+            "version": "[7.0.0, )"
           },
           "Microsoft.NET.Test.Sdk": {
             "target": "Package",

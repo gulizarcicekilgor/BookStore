@@ -24,7 +24,7 @@ namespace WebApi.Application.BookOperations.CreateBook
              var book = _dbContext.Books.SingleOrDefault(x => x.Title == Model.Title);
 
             if(book is not null)   //listemde varsa bad reuest dön
-                throw new InvalidCastException ("Kitap zaten mevcut");
+                throw new InvalidOperationException ("Kitap zaten mevcut");
             
             book = _mapper.Map<Book>(Model); // new Book();
             // book.Title = Model.Title;
