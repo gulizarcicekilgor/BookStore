@@ -67,12 +67,15 @@ Tüm Yazarları Listeleme
 
 Spesifik Bir Yazarın Bilgilerini Getirme
 
-![Alt text](BookStore\WebApi\image\image-20.png)
+
+![Alt text](BookStore/WebApi/image/image-20.png)
 
 
 
 
 dotnet add package Microsoft.AspNetCore.Authentication.JwtBearer --version 7.0.0
+
+
 
 ![Alt text](image.png)
 
