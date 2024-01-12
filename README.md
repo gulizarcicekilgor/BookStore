@@ -15,15 +15,15 @@
 
  Delete
 
- ![Alt text](WebApi/image/image/image-1.png)
+ ![Alt text](WebApi/image/image-1.png)
  
  GetbyId
 
- ![Alt text](WebApi/image/image/image-2.png)
+ ![Alt text](WebApi/image/image-2.png)
 
  Put (update)
 
- ![Alt text](WebApi/image/image/image-3.png)
+ ![Alt text](WebApi/image/image-3.png)
 
  ----Request Loglama---------------
 
