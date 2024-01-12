@@ -76,3 +76,6 @@ dotnet add package Microsoft.AspNetCore.Authentication.JwtBearer --version 7.0.0
 
 ![Alt text](BookStore\WebApi\image.png)
 
+--------
+![Alt text](WebApi\image\image-22.png)
+
