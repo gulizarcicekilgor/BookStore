@@ -9,31 +9,8 @@
  ---Fluent Validation---------------
  dotnet add package FluentValidation --version 7.0.0
  
- Post
-
- ![Alt text](WebApi/image/image.png)
-
- Delete
-
- ![Alt text](WebApi/image/image-1.png)
- 
- GetbyId
-
- ![Alt text](WebApi/image/image-2.png)
-
- Put (update)
-
- ![Alt text](WebApi/image/image-3.png)
-
- ----Request Loglama---------------
-
- ![Alt text](WebApi/image/image-4.png)
-
  dotnet add package Newtonsoft.Json
-
-![Alt text](WebApi/image/image-5.png)
-
-
+ 
 ----Projeye DI Container Kullanarak Logger Servis Eklemek
 builder.Services.AddSingleton<ILoggerService, ConsoleLogger>();
 
