@@ -1,8 +1,5 @@
  dotnet add package Microsoft.EntityFrameworkCore --version 7.0.0
-
- 
  dotnet add package Microsoft.EntityFrameworkCore.InMemory --version 7.0.0
-
 
 #-----Auto mapper------
  dotnet add package AutoMapper --version 7.0.1
@@ -13,20 +10,27 @@
  dotnet add package FluentValidation --version 7.0.0
  
  Post
+
  ![Alt text](WebApi/image/image.png)
+
  Delete
- ![Alt text](WebApi/image/image\image-1.png)
+
+ ![Alt text](WebApi/image/image/image-1.png)
  
  GetbyId
- ![Alt text](WebApi/image/image\image-2.png)
+
+ ![Alt text](WebApi/image/image/image-2.png)
+
  Put (update)
- ![Alt text](WebApi/image/image\image-3.png)
+
+ ![Alt text](WebApi/image/image/image-3.png)
 
  ----Request Loglama---------------
 
  ![Alt text](WebApi/image/image-4.png)
 
  dotnet add package Newtonsoft.Json
+
 ![Alt text](WebApi/image/image-5.png)
 
 
@@ -43,12 +47,15 @@ builder.Services.AddSingleton<ILoggerService, DBLooger>();
 
 ÖDEV - Projeye Author Controller ve Servislerin Eklenmesi
 Yazar Ekleme
+
 ![Alt text](WebApi/image/image-14.png)
+
 ![Alt text](WebApi/image/image-15.png)
 
 Yazar Bilgileri Güncelleme
 
 ![Alt text](WebApi/image/image-16.png)
+
 ![Alt text](WebApi/image/image-17.png)
 
 Yazar Silme
@@ -68,9 +75,6 @@ Tüm Yazarları Listeleme
 Spesifik Bir Yazarın Bilgilerini Getirme
 
 ![Alt text](WebApi/image/image-20.png)
-
-
-
 
 dotnet add package Microsoft.AspNetCore.Authentication.JwtBearer --version 7.0.0
 
