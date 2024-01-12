@@ -1,5 +1,6 @@
 using AutoMapper;
 using FluentValidation;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using WebApi.Application.GenreOpreations.CreateGenre;
 using WebApi.Application.GenreOpreations.DeleteGenre;
@@ -9,7 +10,7 @@ using WebApi.Application.GenreOpreations.UpdateGenre;
 using WebApi.DBOperations;
 
 namespace WebApi.Controllers
-{
+{   [Authorize]
     [ApiController]
     [Route("[controller]")]
     public class GenreController : ControllerBase
