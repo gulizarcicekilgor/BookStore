@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\guliz\\Desktop\\CHomework\\BookStore\\WebApi\\WebApi.csproj": {}
+    "C:\\Users\\guliz\\Desktop\\CHomework\\BookStore\\WebApi\\WebApi.csproj": {}
   },
   "projects": {
-    "c:\\Users\\guliz\\Desktop\\CHomework\\BookStore\\WebApi\\WebApi.csproj": {
+    "C:\\Users\\guliz\\Desktop\\CHomework\\BookStore\\WebApi\\WebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\guliz\\Desktop\\CHomework\\BookStore\\WebApi\\WebApi.csproj",
+        "projectUniqueName": "C:\\Users\\guliz\\Desktop\\CHomework\\BookStore\\WebApi\\WebApi.csproj",
         "projectName": "WebApi",
-        "projectPath": "c:\\Users\\guliz\\Desktop\\CHomework\\BookStore\\WebApi\\WebApi.csproj",
+        "projectPath": "C:\\Users\\guliz\\Desktop\\CHomework\\BookStore\\WebApi\\WebApi.csproj",
         "packagesPath": "C:\\Users\\guliz\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\guliz\\Desktop\\CHomework\\BookStore\\WebApi\\obj\\",
+        "outputPath": "C:\\Users\\guliz\\Desktop\\CHomework\\BookStore\\WebApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\guliz\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -49,6 +49,10 @@
               "version": "[7.0.0, )"
             },
             "FluentValidation": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
               "version": "[7.0.0, )"
             },
